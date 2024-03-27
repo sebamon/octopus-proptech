@@ -1,15 +1,8 @@
-![image](https://github.com/sebamon/octopus-proptech/assets/2036101/76b26030-9969-4305-99b5-3a550831713c)## Octopus Proptech Challenge
+## Octopus Proptech Challenge
 
 Aplicación desarrollada en con Laravel 11, permite la creación de facturas (Invoices) asociando los diferentes servicios disponibles.
 
 ### Requisitos
-
-
-#### Para Windows
-- Composer
-- Postgress
-
-### Recomendación
 - Docker
 - Wsl (Subsistema de Windows para Linux)
 - Composer
@@ -67,7 +60,15 @@ Correr migraciones con seed
 sail artisan migrate --seed
 ```
 
+## Framework
 
+Este proyecto utiliza el framework Laravel 11, una herramienta poderosa y flexible para el desarrollo de aplicaciones web en PHP. Laravel proporciona una estructura sólida y conveniente para la construcción de aplicaciones modernas, permitiendo a los desarrolladores concentrarse en la lógica de negocio en lugar de preocuparse por detalles técnicos.
+
+- **Sitio web**: [Laravel.com](https://laravel.com/)
+- **Documentación oficial**: [Documentación de Laravel](https://laravel.com/docs/11.x)
+- **Repositorio en GitHub**: [laravel/laravel](https://github.com/laravel/laravel)
+
+¡Agradecimientos al equipo de Laravel y a la comunidad de desarrolladores por su continuo trabajo en este increíble framework!
 
 ## License
 
