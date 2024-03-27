@@ -1,4 +1,4 @@
-## Octopus Proptech Challenge
+![image](https://github.com/sebamon/octopus-proptech/assets/2036101/76b26030-9969-4305-99b5-3a550831713c)## Octopus Proptech Challenge
 
 Aplicación desarrollada en con Laravel 11, permite la creación de facturas (Invoices) asociando los diferentes servicios disponibles.
 
@@ -13,24 +13,6 @@ Aplicación desarrollada en con Laravel 11, permite la creación de facturas (In
 - Docker
 - Wsl (Subsistema de Windows para Linux)
 - Composer
-## Instalación Windows
-
-Clonar el repositorio:
-```bash
-git clone https://github.com/sebamon/octopus-proptech.git
-```
-Ingresar a la carpeta:
-```bash
-cd octopus-proptech
-```
-Instalar dependencias:
-```bash
-composer install
-```
-Generar key:
-```bash
-php artisan key:generate
-```
 
 ## Instalación WSL
 
@@ -42,6 +24,11 @@ Ingresar a la carpeta:
 ```bash
 cd octopus-proptech
 ```
+Crear .env
+```bash
+cp .env.example .env
+```
+
 Instalar imagen del contenedor
 ```bash
 docker run --rm \
@@ -51,27 +38,35 @@ docker run --rm \
     laravelsail/php83-composer:latest \
     composer install --ignore-platform-reqs
 ```
-
-Instalar Sail
+Otorgar permisos
 ```bash
-composer require laravel/sail --dev
+sudo chmod -R 777 storage/
+```
+Generar alias sail
+```bash
+alias sail='./vendor/bin/sail'
 ```
 
-Crear los contenedores
+Levantar contenedor Sail
 ```bash
-docker-compose up -d
+sail up -d
+```
+Instalar dependencias
+```bash
+sail composer install
+sail npm install
 ```
 
-## Configurar variables de entorno
-
-Renombar .env.example por .env
-
-## Posibles errores
-
-Error de permisos
+Crear key de la app
 ```bash
-chmod -R 775 storage
+sail artisan key:generate
 ```
+
+Correr migraciones con seed
+```bash
+sail artisan migrate --seed
+```
+
 
 
 ## License
