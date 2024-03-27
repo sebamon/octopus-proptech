@@ -1,4 +1,5 @@
 ## Octopus Proptech Challenge
+![image](https://www.octopus.com.ar/public/octopus/img/octopus_logo-innovacon.svg)
 
 Aplicación desarrollada en con Laravel 11, permite la creación de facturas (Invoices) asociando los diferentes servicios disponibles.
 
@@ -61,6 +62,8 @@ sail artisan migrate --seed
 ```
 
 ## Framework
+
+![image](https://laravel.com/img/logotype.min.svg)
 
 Este proyecto utiliza el framework Laravel 11, una herramienta poderosa y flexible para el desarrollo de aplicaciones web en PHP. Laravel proporciona una estructura sólida y conveniente para la construcción de aplicaciones modernas, permitiendo a los desarrolladores concentrarse en la lógica de negocio en lugar de preocuparse por detalles técnicos.
 
