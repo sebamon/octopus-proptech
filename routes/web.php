@@ -7,7 +7,7 @@ use App\Http\Controllers\InvoiceController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('invoice.index');
 });
 Route::get('/home', [InvoiceController::class,'index'])->name('invoice.index');
 
